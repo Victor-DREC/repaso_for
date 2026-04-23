@@ -1,14 +1,50 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pro - Neón</title>
+    <link rel="stylesheet" href="repaso.css">
     <script src="repaso.js"></script>
 </head>
 <body>
-    <button onclick="mostrar(1)">EJERCICIO 1</button>
-    <button onclick="mostrar(2)">CENTENAS</button>
-    <button onclick="mostrar(3)">CENTENAS REGRESIVO</button>
-    <button onclick="mostrar(4)">MOSTRAR MENSAJE 1</button>
-    <button onclick="mostrar(5)">MOSTRAR MENSAJE 2</button>
-    <button onclick="mostrar(6)">MOSTRAR MENSAJE 3</button>
-    <button onclick="mostrar(7)">MOSTRAR MENSAJE 4</button>
+    <div class="neon-wrapper">
+        <header>
+            <h1 class="neon-text">REPASO <span class="cyan">JS</span></h1>
+        </header>
+
+        <main class="dashboard">
+            <section class="card">
+                <h3>Lógica y Números</h3>
+                <div class="button-group">
+                    <button class="btn btn-blue" onclick="mostrar(1)">Ejercicio 1</button>
+                    <button class="btn btn-blue" onclick="mostrar(2)">Centenas</button>
+                    <button class="btn btn-blue" onclick="mostrar(3)">Centenas Regresivo</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Notificaciones</h3>
+                <div class="button-group">
+                    <button class="btn btn-pink" onclick="mostrar(4)">Mensaje 1</button>
+                    <button class="btn btn-pink" onclick="mostrar(5)">Mensaje 2</button>
+                    <button class="btn btn-pink" onclick="mostrar(6)">Mensaje 3</button>
+                    <button class="btn btn-pink" onclick="mostrar(7)">Mensaje 4</button>
+                </div>
+            </section>
+
+            <section class="card footer-card">
+                <button class="btn btn-green" onclick="mostrar(8)">TABLA DEL 3</button>
+            </section>
+        </main>
+    </div>
 </body>
-<html></html>
+</html>
+
+
+
+    <!-- <button onclick="mostrar(9)">PARES</button>
+    <button onclick="mostrar(10)">IMPRIMIR LISTA</button>
+    <button onclick="mostrar(11)">IMPRIMIR SECUENCIA</button>
+    <button onclick="mostrar(12)">IMPRIMIR PIRAMIDE</button>
+    <button onclick="mostrar(13)">PIRAMIDE INVERTIDA</button> -->

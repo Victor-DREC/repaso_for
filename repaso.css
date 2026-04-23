@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500&display=swap');
+
+:root {
+    --bg-dark: #0a0a0c;
+    --card-bg: #16161a;
+    --neon-cyan: #00f3ff;
+    --neon-pink: #ff007b;
+    --neon-green: #39ff14;
+    --text-gray: #8f8f9d;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.neon-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.neon-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+}
+
+.cyan { color: var(--neon-cyan); }
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botones con estilo Neón */
+.btn {
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-blue {
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+}
+
+.btn-blue:hover {
+    background: var(--neon-cyan);
+    color: black;
+    box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.btn-pink {
+    border-color: var(--neon-pink);
+    color: var(--neon-pink);
+}
+
+.btn-pink:hover {
+    background: var(--neon-pink);
+    color: white;
+    box-shadow: 0 0 20px var(--neon-pink);
+}
+
+.btn-green {
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+}
+
+.btn-green:hover {
+    background: var(--neon-green);
+    color: black;
+    box-shadow: 0 0 20px var(--neon-green);
+}
+
+.footer-card {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .dashboard { grid-template-columns: 1fr; }
+}
